@@ -7,7 +7,7 @@
 # Other VCS sources are not natively supported by makepkg yet.
 
 # Maintainer: Your Name <youremail@domain.com>
-pkgname=otf-comic-mono-git # '-bzr', '-git', '-hg' or '-svn'
+pkgname=otf-comic-code-git # '-bzr', '-git', '-hg' or '-svn'
 pkgver=f38ee2896ae8727f13d21efb6d09c739e367651b
 pkgrel=1
 pkgdesc="Comic Code terminal font (OTF)"
