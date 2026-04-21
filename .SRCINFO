@@ -1,0 +1,14 @@
+pkgbase = otf-comic-mono-git
+	pkgdesc = Comic Code terminal font (OTF)
+	pkgver = f38ee2896ae8727f13d21efb6d09c739e367651b
+	pkgrel = 1
+	url = https://github.com/secdrill/Fonts
+	arch = any
+	license = unknown
+	makedepends = git
+	provides = otf-comic-mono-git
+	conflicts = otf-comic-mono-git
+	source = otf-comic-mono-git::git+https://github.com/secdrill/Fonts
+	sha256sums = SKIP
+
+pkgname = otf-comic-mono-git

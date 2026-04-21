@@ -1,0 +1,4 @@
+[otf-comic-mono-git]
+source = "git"
+git = "https://github.com/secdrill/Fonts.git"
+use_commit = "yes"
