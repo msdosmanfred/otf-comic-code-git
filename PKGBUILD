@@ -31,35 +31,5 @@ sha256sums=('SKIP')
 # a description of each element in the source array.
 
 package() {
-  install -Dm644 "$srcdir/$pkgname/Comic Code Bold Italic.otf" -t "$pkgdir/usr/share/fonts/OTF"
-  install -Dm644 "$srcdir/$pkgname/Comic Code Bold.otf" -t "$pkgdir/usr/share/fonts/OTF"
-  install -Dm644 "$srcdir/$pkgname/Comic Code Demo Italic.otf" -t "$pkgdir/usr/share/fonts/OTF"
-  install -Dm644 "$srcdir/$pkgname/Comic Code Demo Regular.otf" -t "$pkgdir/usr/share/fonts/OTF"
-  install -Dm644 "$srcdir/$pkgname/Comic Code Italic.otf" -t "$pkgdir/usr/share/fonts/OTF"
-  install -Dm644 "$srcdir/$pkgname/Comic Code Ligatures Bold Italic.otf" -t "$pkgdir/usr/share/fonts/OTF"
-  install -Dm644 "$srcdir/$pkgname/Comic Code Ligatures Bold.otf" -t "$pkgdir/usr/share/fonts/OTF"
-  install -Dm644 "$srcdir/$pkgname/Comic Code Ligatures Italic.otf" -t "$pkgdir/usr/share/fonts/OTF"
-  install -Dm644 "$srcdir/$pkgname/Comic Code Ligatures Italic.otf" -t "$pkgdir/usr/share/fonts/OTF"
-  install -Dm644 "$srcdir/$pkgname/Comic Code Ligatures Light.otf" -t "$pkgdir/usr/share/fonts/OTF"
-  install -Dm644 "$srcdir/$pkgname/Comic Code Ligatures Medium Italic.otf" -t "$pkgdir/usr/share/fonts/OTF"
-  install -Dm644 "$srcdir/$pkgname/Comic Code Ligatures Medium.otf" -t "$pkgdir/usr/share/fonts/OTF"
-  install -Dm644 "$srcdir/$pkgname/Comic Code Ligatures Regular.otf" -t "$pkgdir/usr/share/fonts/OTF"
-  install -Dm644 "$srcdir/$pkgname/Comic Code Ligatures Semibold Italic.otf" -t "$pkgdir/usr/share/fonts/OTF"
-  install -Dm644 "$srcdir/$pkgname/Comic Code Ligatures Semibold.otf" -t "$pkgdir/usr/share/fonts/OTF"
-  install -Dm644 "$srcdir/$pkgname/Comic Code Ligatures Thin Italic.otf" -t "$pkgdir/usr/share/fonts/OTF"
-  install -Dm644 "$srcdir/$pkgname/Comic Code Ligatures Thin.otf" -t "$pkgdir/usr/share/fonts/OTF"
-  install -Dm644 "$srcdir/$pkgname/Comic Code Ligatures UltraLight Italic.otf" -t "$pkgdir/usr/share/fonts/OTF"
-  install -Dm644 "$srcdir/$pkgname/Comic Code Ligatures UltraLight.otf" -t "$pkgdir/usr/share/fonts/OTF"
-  install -Dm644 "$srcdir/$pkgname/Comic Code Light Italic.otf" -t "$pkgdir/usr/share/fonts/OTF"
-  install -Dm644 "$srcdir/$pkgname/Comic Code Light.otf" -t "$pkgdir/usr/share/fonts/OTF"
-  install -Dm644 "$srcdir/$pkgname/Comic Code Medium Italic.otf" -t "$pkgdir/usr/share/fonts/OTF"
-  install -Dm644 "$srcdir/$pkgname/Comic Code Medium.otf" -t "$pkgdir/usr/share/fonts/OTF"
-  install -Dm644 "$srcdir/$pkgname/Comic Code Regular.otf" -t "$pkgdir/usr/share/fonts/OTF"
-  install -Dm644 "$srcdir/$pkgname/Comic Code Semibold Italic.otf" -t "$pkgdir/usr/share/fonts/OTF"
-  install -Dm644 "$srcdir/$pkgname/Comic Code Semibold.otf" -t "$pkgdir/usr/share/fonts/OTF"
-  install -Dm644 "$srcdir/$pkgname/Comic Code Thin Italic.otf" -t "$pkgdir/usr/share/fonts/OTF"
-  install -Dm644 "$srcdir/$pkgname/Comic Code Thin.otf" -t "$pkgdir/usr/share/fonts/OTF"
-  install -Dm644 "$srcdir/$pkgname/Comic Code UltraLight Italic.otf" -t "$pkgdir/usr/share/fonts/OTF"
-  install -Dm644 "$srcdir/$pkgname/Comic Code UltraLight.otf" -t "$pkgdir/usr/share/fonts/OTF"
-
+  install -Dm644 -t "${pkgdir}/usr/share/fonts/OTF/" "${srcdir}"/${pkgname}/*.otf
 }
